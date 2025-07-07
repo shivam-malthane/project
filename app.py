@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def reports():
-    return render_template("reports.html")
+    return render_template("index.html")
 
 @app.route("/download-report")
 def download_report():
