@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports & Compliance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Reports & Compliance</h1>
+            <p>Gain insights, track compliance & stay audit-ready</p>
+        </header>
+
+        <section class="card">
+            <h2>📈 Sales & Inventory Reports</h2>
+            <p>Export latest sales and inventory stats in one click.</p>
+            <button onclick="downloadReport()">⬇️ Download Report</button>
+        </section>
+
+        <section class="card">
+            <h2>🧾 GST Compliance</h2>
+            <p>Fill out GST details to stay aligned with tax regulations.</p>
+            <form>
+                <input type="text" placeholder="Enter GST Number" required>
+                <input type="date" required>
+                <button type="submit">✔️ Submit</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>🔍 Audit Logs</h2>
+            <p>Track system activities with full transparency.</p>
+            <ul id="logList">Loading logs...</ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
